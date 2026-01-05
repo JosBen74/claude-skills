@@ -7,6 +7,7 @@ Personal skills for Claude Code CLI.
 | Skill | Description | Trigger |
 |-------|-------------|---------|
 | reflect | Analyze conversations and propose skill improvements | `/reflect [skill-name]` |
+| frontend-design | Modern, accessible frontend code with consistent design | UI/component requests |
 
 ## Structure
 
