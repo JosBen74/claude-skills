@@ -1,6 +1,12 @@
 ---
 name: n8n-workflow-patterns
 description: Proven workflow architectural patterns from real n8n workflows. Use when building new workflows, designing workflow structure, choosing workflow patterns, planning workflow architecture, or asking about webhook processing, HTTP API integration, database operations, AI agent workflows, or scheduled tasks.
+auto_activation: true
+activation_keywords: ["n8n", "workflow", "automation", "flöde", "arbetsflöde"]
+source: https://github.com/czlonkowski/n8n-skills
+notes: |
+  - Aktiveras automatiskt vid n8n-relaterade frågor - ingen explicit begäran krävs
+  - Föredra community skills över custom implementations när tillgängliga
 ---
 
 # n8n Workflow Patterns
