@@ -8,6 +8,7 @@ Personal skills for Claude Code CLI.
 |-------|-------------|---------|
 | reflect | Analyze conversations and propose skill improvements | `/reflect [skill-name]` |
 | frontend-design | Modern, accessible frontend code with consistent design | UI/component requests |
+| api-design | Consistent REST APIs with proper status codes and docs | API/endpoint requests |
 
 ## Structure
 
