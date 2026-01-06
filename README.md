@@ -8,6 +8,7 @@ Personal skills for Claude Code CLI.
 
 | Skill | Description | Trigger |
 |-------|-------------|---------|
+| project-scaffolder | Set up new projects with CLAUDE.md, commands, and structure | "scaffold", "new project", "sätt upp" |
 | reflect | Analyze conversations and propose skill improvements | `/reflect [skill-name]` |
 | frontend-design | Modern, accessible frontend code with consistent design | UI/component requests |
 | api-design | Consistent REST APIs with proper status codes and docs | API/endpoint requests |
@@ -28,6 +29,8 @@ Personal skills for Claude Code CLI.
 
 ```
 skills/
+├── project-scaffolder/
+│   └── SKILL.md              # Integrates with frontend-design, api-design, n8n-*
 ├── reflect/
 │   └── SKILL.md
 ├── frontend-design/
@@ -64,9 +67,18 @@ Configure in `.mcp.json` with your n8n instance details.
 ## Usage
 
 Skills are automatically activated based on context. For example:
+- Ask to create a new project → activates `project-scaffolder`
 - Ask about n8n expressions → activates `n8n-expression-syntax`
 - Ask to build a workflow → activates `n8n-workflow-patterns`
 - Ask about UI components → activates `frontend-design`
+- Ask about API design → activates `api-design`
+
+### Skill Integration
+
+The `project-scaffolder` skill automatically applies other skills based on project type:
+- **Frontend projects** → `frontend-design` guidelines included
+- **API projects** → `api-design` patterns included
+- **n8n projects** → `n8n-workflow-patterns` referenced
 
 ## Credits
 
